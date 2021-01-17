@@ -1,4 +1,4 @@
-# cafeteriaReal
+# Guia para la configuración de la app de cafetería.
 
 Para poder correr la app en tu compu
 ```cmd
