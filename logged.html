@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafetería</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Inicia Navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success text-white">
+    <a class="navbar-brand" href="./index.html">La cafeteria</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="./login.html">Crear Usuario <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./comprar.html">Comprar</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" id='logged' href="./logged.html"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Termina Navbar-->
+    
+  <!-- Sesion Adentro -->
+    <div class="container col-sm-5 mx-auto border p-5 mt-5 text-center" id="bienvenida">
+      <div class="col-sm-12 text-center">
+        <h3>Has Iniciado Sesion</h3>
+        <div class="dropdown-divider mx-auto"></div>
+        <p class="lead" id="user"></p>
+        <a class="lead" id="mail"></a>
+      </div>
+      <button type="button" id="btnsignout" onclick=signOut() class="mt-4 btn btn-danger">Cerrar Sesion</button>
+    </div>
+      <!-- Publicar texto
+      <div class="form-group mt-4">
+        <label for="">Publica Algo</label>
+        <input type="text" class="form-control" name="texto" id="texto" aria-describedby="helpId" placeholder="">
+        <small id="helpId" class="form-text text-muted">Esto es solamente para probar firebase xd</small>
+        <button type="button" id="publicar" class="mt-2 btn btn-primary">Publicar</button>
+      </div> -->
+      <!-- cierra publicar texto -->
+      
+
+    <!-- Empiezan scripts de firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>

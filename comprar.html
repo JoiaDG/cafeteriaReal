@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafeteria</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--Inicia Navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success text-white">
+    <a class="navbar-brand" href="./index.html">La cafeteria</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="./login.html">Crear Usuario <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comprar</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Action 1</a>
+            <a class="dropdown-item" href="#">Action 2</a>
+          </div>
+        </li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" id='logged' href="./logged.html"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Termina Navbar-->
+  <div class="container p-5 text-center">
+    <h1>Añade algo a carrito de compras</h1>
+  </div>
+  <div class="container p-5" id='tablaDatos'>
+  </div>
+
+  <meta name="viewport" content="width= <div class="container-fluid">
+    <div class="row">
+        <div class=" col-8 mx-auto mt-5 mb-3">
+            <div class="card">
+                <div class="card-header text-center">
+                    Carrito
+                </div>
+                <div class="card-body fluid" id="contenidoTabla">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card text-center col-3 mx-auto mt-5">
+            <div class="card-header">
+                <h1>Total</h1>
+            </div>
+             <div class="card-body">
+                <div>
+                    <span>Total :</span>
+                    <span>$15.00</span>
+                </div>
+                <a href="#" class="btn btn-primary">Pagar</a>
+            </div>
+        </div> -->
+    </div>
+</div>
+    <!-- Empiezan scripts de firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-functions.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
