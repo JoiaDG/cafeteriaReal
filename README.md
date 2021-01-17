@@ -9,7 +9,7 @@ Una vez que lo instales, te diriges a la carpeta del repositorio (osea donde ten
 firebase login
 ```
 Pues abrira una pestaña de google y te metes con tu correo, ya te compartí los permisos para acceder a firebase  
-# ya puedes empezar a editar la pagina  
+### Ahora puedes empezar a editar la pagina  
 cada cambio que realices y quieras probar puedes correrlo con
 ```
 firebase serve
