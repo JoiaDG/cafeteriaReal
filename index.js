@@ -54,6 +54,7 @@ if(window.location.pathname == "./logged.html"){
 }
 
 // Aqui se acaba el main
+// Esta es una función para añadir un objeto al leerCarrito, del menu que ya esta establecido
 function addCart(pAdded){
   var pName = "";
   var pPrecio;
@@ -81,6 +82,8 @@ function addCart(pAdded){
   });
 }
 
+
+// Esta funcion elimina un producto del carrito.
 function deleteCart(productId){
   db.collection("cart").doc(productId).delete().then(function() {
     alert('Pedido eliminado del carrito')
@@ -91,6 +94,7 @@ function deleteCart(productId){
 
 }
 
+// Esta funcion Lee el carrito del usuario, y lo muestra en la zona del carrito.
 function leerCarrito(){
   db.collection("cart").where("userId", "==", firebase.auth().currentUser.uid)
     .get()
@@ -124,8 +128,9 @@ function leerCarrito(){
     });
 
 }
+
+//Esta funcion imprime todas las comidas que esten registradas en la aplicacion.
 function leerTabla(){
-  
   db.collection("comidas").get().then(function(querySnapshot) {
     var tabla="";
     var cada3 = 0;
